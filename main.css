@@ -311,7 +311,12 @@ section div.item#pop3 {
 section div.item#pop4 {
     background: black url(Assets/Ginger.jpg) no-repeat top center;
     background-size: 20vw;
+    
 } 
+
+section div.item#pop4 h2{
+    font-size: 1.5vw;
+}
 
 /* Catagories */
 section div.item#cat1 {
