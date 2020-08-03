@@ -170,6 +170,7 @@ nav#searchBar {
     height: 20px;
     margin: 0;
     padding-left: 30px;
+    border-radius: 2em;
 }
 #searchImg
 {
