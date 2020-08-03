@@ -1,0 +1,394 @@
+/* Google font family references:
+font-family: 'Libre Baskerville', serif;
+font-family: 'Dancing Script', cursive; */
+
+body {
+    font-family: 'LibreBaskerville', serif;
+    background: #a3a6b6 url(Assets/PaperBackground.jpg) no-repeat fixed top center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .5em 0 .5em 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    color: lavender;
+    font-size: 1.5em;
+    margin: .5em 0 .5em 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: normal;
+    color: rgb(0, 0, 0);
+    padding: 0;
+
+}
+ol {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    margin-left: .5em;
+    padding: 0 0 0 1em;
+}
+ol li {
+    margin: 0;
+    padding-left: .4em;
+}
+
+a, a:visited {
+    color: black;
+}
+a:hover {
+    color: white;
+}
+
+
+.contentWrapper {
+    margin: auto;
+    max-width: 2000px;
+    padding: 0 2em;
+}
+div.clear {
+    clear: both;
+    font-size: 1%;
+}
+
+.brand h1{
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-size: 3em;
+    /* Cool trick for gradiant text colors */
+    background: linear-gradient(white, rgb(73,171,251));  
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+.brand h2{
+    color: darkgrey;
+    font-weight: 800;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: .1em;
+}
+
+
+header {
+    background-color: #535879;
+    padding: 1.5em 0 0.5em 0;
+    margin: 0 0 0 0;
+    height: 110px;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+/* NavBar */
+
+nav {
+    color: black;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 5px;    
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+nav li a:hover {
+    border-color: white;
+}
+nav#accountInfo {
+    float: right;
+    height: 1.5em;
+    margin-top: -1.4em;
+    margin-right: -1em;
+    padding: 0 1em 0 1em;
+    background-color: rgb(0, 0, 0, .3);
+}
+nav#accountInfo li {
+    margin: .2em .5em .5em .5em;
+    padding: 0 .5em 0 0;
+
+    vertical-align: middle;
+    text-align: center;
+}
+
+header .brand {
+    margin: 0;
+    width: 20em;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255 , .1);
+    background: radial-gradient(rgb(255,255,255, 0.2) ,transparent);
+    position: absolute;
+    display: inline-block;
+    margin-top: -1em;
+}
+
+#navigation {
+    position: absolute;
+    bottom: 7px;
+    display: inline-block;
+    
+}
+
+nav#searchBar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+}
+#search {
+    height: 20px;
+    margin: 0;
+    padding-left: 30px;
+}
+#searchImg
+{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+nav ul li::before {
+    content: "| ";
+    color: ivory;
+}
+
+nav ul li:first-child::before{
+    content: "";
+}
+/* Spacer for navbar */
+
+#headerSpacer {
+    top: 0;
+    width: 100%;
+    height: 142px;
+}
+
+/* Cover Image */
+#cover {
+    width: 100%;
+    height: 90vh;
+    background: black url(Assets/CoverPhoto.jpg) no-repeat top center;
+    background-size: 100%;
+}
+
+#cover .brand {
+    position: relative;
+    left: 20%;
+    top: 15%;
+    font-size: 3vw;
+    width: 50%;
+}
+
+#cover .brand  h1 {
+    background: linear-gradient(rgba(255,255,255,.1), rgba(66, 3, 241, 0.274));
+    -webkit-background-clip: text;
+    text-align: left;
+
+}
+
+#cover .brand h2 {
+    color: rgba(169,169,169,.1);
+}
+
+/* sidebar */
+section.sidebar {
+    width: 20vw;
+    float: right;
+    position: relative;
+    display: block;
+    background-color: rgb(100, 150, 200,.5);
+    margin: 1em 1em;
+    padding: 0 1em 0 1em ;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
+
+section.sidebar .DOTWImage {
+    position: relative;
+    left: 5vw;
+    height: 10vw;
+    width: 10vw;
+    text-align: center;
+    border-radius: 30px;
+}
+
+section.sidebar h2 {
+    color: rgb(124, 129, 158);
+    text-align: center;
+}
+
+section.sidebar hr {
+    margin: 0 -1em 0 -1em;
+}
+
+/* main section */
+
+section#main {
+    background-color: rgb(100, 150, 200,.5);
+    margin: 1em 0 0 2vw;
+    padding: 1.5em 0 2em 1.5em;
+    display: inline-block;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px black;
+    width: 62vw;
+}
+
+
+section div.item {
+    float: left;
+    position: relative;
+    margin: 1em;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 1em;
+    text-align: center;
+    line-height: 12vw;
+    
+}
+section div.item a h2{
+    margin: -.05vw 0 .1vw 0;
+    padding: -2vw 0 -2vw 0;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+section div.item:hover {
+    filter: opacity(80%);
+    
+}
+/* Popular Items */
+section div.item#pop1 {
+    background: black url(Assets/EarlGreyBag.jpg) no-repeat top center;
+    background-size: 13vw;
+}
+
+section div.item#pop2 {
+    background: black url(Assets/Chamomile.jpg) no-repeat top center;
+    background-size: 15vw;
+}
+
+section div.item#pop3 {
+    background: black url(Assets/Chai.jpg) no-repeat top center;
+    background-size: 13vw;
+}
+
+section div.item#pop4 {
+    background: black url(Assets/Ginger.jpg) no-repeat top center;
+    background-size: 20vw;
+} 
+
+/* Catagories */
+section div.item#cat1 {
+    background: black url(Assets/BlackTea.jpg) no-repeat top center;
+    background-size: 20vw;
+}
+
+section div.item#cat2 {
+    background: black url(Assets/GreenTea.jpg) no-repeat top center;
+    background-size: 20vw;
+}
+
+section div.item#cat3 {
+    background: black url(Assets/HerbalTea.jpg) no-repeat top center;
+    background-size: 13vw;
+}
+
+section div.item#cat4 {
+    background: black url(Assets/WhiteTea.jpg) no-repeat top center;
+    background-size: 20vw;
+}
+
+/* Merch */
+section div.item#merch1 {
+    background: black url(Assets/kettle.jpg) no-repeat top center;
+    background-size: 13vw;
+}
+section div.item#merch2 {
+    background: black url(Assets/TeaShirt.jpg) no-repeat top center;
+    background-size: 20vw;
+}
+section div.item#merch3 {
+    background: black url(Assets/Mug.jpg) no-repeat top center;
+    background-size: 14vw;
+}
+section div.item#merch4 {
+    background: black url(Assets/TeaSet.jpg) no-repeat top center;
+    background-size: 15vw;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgba(15, 15, 15, .7);
+    height: 50px;
+    font-size: 1em;
+    padding: 0em 0em;
+    margin-top: 2em;
+}
+
+footer ul{
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul#footerLinks li{
+    display: inline-block;
+    margin: 0 .5em 1em 0em;
+}
+
+footer ul#footerLinks li::before {
+    content: "| ";
+}
+
+footer ul#footerLinks li:first-child::before {
+    content: "";
+}
+
+footer ul#socialLinks {
+    float: right;
+    position: relative;
+
+    margin: .5em 1em;
+}
+footer ul#socialLinks li{
+    display: inline-block;
+    margin: 0 .25em;
+}
+
+footer ul#socialLinks li img {
+    height: 30px;
+    width: 30px
+}
